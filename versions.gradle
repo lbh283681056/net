@@ -1,0 +1,227 @@
+/**
+ * # ############################################
+ * #
+ * # 系统总配置
+ * #
+ * #############################################
+ *
+ */
+
+ext {
+
+    isModule = true
+
+    //基础配置
+    applicationId = "com.lbh.net"
+    versionCode = 1000
+    versionName = "1.0.0.0"
+    compileSdkVersion = "android-S"
+    buildToolsVersion = "30.0.3"
+    targetSdkVersion = "S"
+    minSdkVersion = 19
+
+    //第三方库版本
+    versions = [
+
+            android_gradle_plugin: '3.5.3',
+            appcompat            : "1.2.0",
+            navigation           : "2.4.1",
+            fragment             : "1.4.1",
+            activity             : "1.4.0",
+            constraint_layout    : "2.0.1",
+            lifecycle            : "2.4.1",
+            annotation           : "1.1.1",
+            cardview             : "1.0.0",
+            recyclerview         : "1.2.1",
+            swiperefreshlayout   : "1.1.0",
+
+
+
+            rx_android           : "2.0.2",
+            rxjava2              : "2.1.3",
+            okHttp               : "4.6.0",
+            okio                 : "2.6.0",
+            retrofit             : "2.3.0",
+            glide                : '4.11.0',
+            gson                 : '2.8.6',
+            eventbus             : '3.0.0',
+
+
+            material             : "1.2.1",
+            core_ktx             : "1.1.0",
+            core_utils           : "1.0.0",
+            coroutines           : "1.3.3",
+            dagger               : "2.16",
+            dexmaker             : "2.2.0",
+            espresso             : "3.2.0",
+            hamcrest             : "1.3",
+            junit                : "4.12",
+            kotlin               : "1.3.61",
+
+            mockito              : "2.25.0",
+            mockito_all          : "1.10.19",
+            mockito_android      : "2.25.0",
+            mockwebserver        : "3.8.1",
+            paging               : "2.1.0",
+
+
+            robolectric          : "4.2",
+            room                 : "2.3.0-alpha04",
+            adapter              : "2.3.0",
+            timber               : "4.7.1",
+            transition           : "1.3.0",
+            work                 : "2.2.0",
+            netease              : "4.4.0",
+
+
+
+            nimlib               : "8.2.5",
+
+            arouter              : "1.5.1",
+            arouter_register     : "1.0.2"
+
+
+    ]
+
+
+    androidx = [
+            appcompat         : "androidx.appcompat:appcompat:$versions.appcompat",
+            constraintlayout  : "androidx.constraintlayout:constraintlayout:$versions.constraint_layout",
+
+//            activity           : "androidx.activity:activity:$versions.activity",
+            fragment           : "androidx.fragment:fragment:$versions.fragment",
+
+//            navigation_fragment: "androidx.navigation:navigation-fragment:$versions.navigation",
+//            navigation_ui      : "androidx.navigation:navigation-ui:$versions.navigation",
+//            lifecycle         : "androidx.lifecycle:lifecycle-*:$versions.lifecycle",
+//            annotation         : "androidx.annotation:annotation:$versions.annotation",
+            cardview          : "androidx.cardview:cardview:$versions.cardview",
+            recyclerview      : "androidx.recyclerview:recyclerview:$versions.recyclerview",
+            swiperefreshlayout: "androidx.swiperefreshlayout:swiperefreshlayout:$versions.swiperefreshlayout",
+
+
+
+            material          : "com.google.android.material:material:$versions.material",
+
+
+//            banner             : 'com.youth.banner:banner:2.1.0',
+//            viewpagerlibx      : 'com.github.LillteZheng.ViewPagerHelper:viewpagerlibx:v2.9'
+
+//            room_runtime       : "androidx.room:room-runtime:$room",
+//            room_rx            : "androidx.room:room-rxjava2:$room",
+//            room_guava         : "androidx.room:room-guava:$room"
+    ]
+//    room_compiler = "androidx.room:room-compiler:$room"
+
+    //网络请求
+    http = [
+            retrofit      : "com.squareup.retrofit2:retrofit:$versions.retrofit",
+            gson_converter: "com.squareup.retrofit2:converter-gson:$versions.retrofit",
+            mock          : "com.squareup.retrofit2:retrofit-mock:$versions.retrofit",
+            rx_adapter    : "com.squareup.retrofit2:adapter-rxjava2:$versions.retrofit",
+            okhttp        : "com.squareup.okhttp3:okhttp:$versions.okhttp",
+            okio          : "com.squareup.okio:okio:$versions.okio"
+    ]
+    rxJava = [
+            rx_android: "io.reactivex.rxjava2:rxandroid:$versions.rx_android",
+            rxjava2   : "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
+    ]
+
+
+    json = [
+            fastjson        : "com.alibaba:fastjson:1.2.73",
+            fastjson_android: "com.alibaba:fastjson:1.1.72.android"
+
+    ]
+
+    image = [
+
+
+            glide       : "com.github.bumptech.glide:glide:$versions.glide",
+            trans       : "jp.wasabeef:glide-transformations:3.3.0@aar",
+            integration : "com.github.bumptech.glide:recyclerview-integration:$versions.glide",
+            glide_okhttp: "com.github.bumptech.glide:okhttp3-integration:$versions.glide",
+            gif         : 'pl.droidsonroids.gif:android-gif-drawable:1.2.1',
+//            svga        : 'com.github.yyued:SVGAPlayer-Android:+',
+
+    ]
+    glideCompiler = "com.github.bumptech.glide:compiler:$versions.glide"
+    widget = [
+//            kernel                       : 'com.scwang.smart:refresh-layout-kernel:2.0.5',
+//            classics                     : 'com.scwang.smart:refresh-header-classics:2.0.5',
+//            radar                        : 'com.scwang.smart:refresh-header-radar:2.0.5',     //雷达刷新头
+//            falsify                      : 'com.scwang.smart:refresh-header-falsify:2.0.5',   //虚拟刷新头
+//            material                     : 'com.scwang.smart:refresh-header-material:2.0.5',   //谷歌刷新头
+//            level                        : 'com.scwang.smart:refresh-header-two-level:2.0.5',  //二级刷新头
+//            ball                         : 'com.scwang.smart:refresh-footer-ball:2.0.5',    //球脉冲加载
+//            footer                       : 'com.scwang.smart:refresh-footer-classics:2.0.5',   //经典加载
+
+
+            // 基础依赖包，必须要依赖
+            immersionbar                 : 'com.gyf.immersionbar:immersionbar:3.0.0',
+            immersionbar_components      : 'com.gyf.immersionbar:immersionbar-components:3.0.0',
+            //adapter
+            BaseRecyclerViewAdapterHelper: 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4',
+            //时间轮子
+            PickerView                   : 'com.contrarywind:Android-PickerView:4.1.9',
+            ucrop                        : 'com.github.yalantis:ucrop:2.2.4'
+
+    ]
+    /**
+     * 常用功能库-------------------------------------
+     */
+    //eventbus
+    eventbus = "org.greenrobot:eventbus:$versions.eventbus"
+    eventbusCompiler = "org.greenrobot:eventbus-annotation-processor:$versions.eventbus"
+
+
+
+
+    //数据解析
+    gson = "com.google.code.gson:gson:$versions.gson"
+
+
+    /**
+     * 环境配置---------------------------------------------
+     */
+    onlyDebug = [
+            leakCannary: "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
+    ]
+
+    onlyRelease = [
+//            leakCannary: "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
+leakCannary: "com.squareup.leakcanary:leakcanary-android-no-op:$versions.leakcanary"
+    ]
+
+
+    androidTests = [
+            espressoCore      : "com.android.support.test.espresso:espresso-core:$versions.espresso",
+            espressoContrib   : "com.android.support.test.espresso:espresso-contrib:$versions.espresso",
+            espressoIntents   : "com.android.support.test.espresso:espresso-intents:$versions.espresso",
+            espressoAcc       : "com.android.support.test.espresso:espresso-accessibility:$versions.espresso",
+            espressoIdle      : "com.android.support.test.espresso:espresso-idling-resource:$versions.espresso",
+            espressoConcurrent: "com.android.support.test.espresso.idling:idling-concurrent:$versions.espresso",
+            espressoNetIdle   : "com.android.support.test.espresso.idling:idling-net:$versions.espresso",
+
+    ]
+
+
+    /**
+     * 项目引用库
+     */
+    androidxLibs = androidx.values()
+    rxJavaLibs = rxJava.values()
+    httpLib = http.values()
+    jsonLib = json.values()
+    imageLib = image.values()
+    annotationProcessorLibs = [glideCompiler]
+    widgetLib = widget.values()
+
+    debugLibs = onlyDebug.values()
+    releaseLibs = onlyRelease.values()
+    androidTestsLibs = androidTests.values()
+
+
+
+
+}
